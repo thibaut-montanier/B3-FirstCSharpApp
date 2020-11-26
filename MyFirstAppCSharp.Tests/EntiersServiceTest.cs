@@ -35,6 +35,8 @@ namespace MyFirstAppCSharp.Tests {
         [DataRow(1, false)]
         public void isEvenTest(int value, bool result) {
             var entSrv = new EntiersService();
+            var l = new List<int>();
+            var l2 = new List<int>();
 
             Assert.AreEqual(value, result);
         }

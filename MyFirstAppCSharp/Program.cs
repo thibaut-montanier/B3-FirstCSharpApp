@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -39,16 +40,38 @@ namespace MyFirstAppCSharp {
             // Toutes les personnes dont le nom commence par "P"
             // Toutes les personnes dont le nom est exactement Pierre
             // Toutes les personnes dont le nom contient un f
+            Person p1 = new Person() { Nom = "Pierre", Age = 16 };
+            Person p2 = new Person() { Nom = "Jean", Age = 16 };
+            List<Person> mesPers = new List<Person> {
+                p1,
+                p2,
+                new Person() { Nom = "Sohpie", Age = 20},
+                new Person() { Nom = "ANais", Age = 30},
+                new Person() { Nom = "Paul", Age = 5},
+                new Person() { Nom = "Fabrice", Age = 45},
+                new Person() { Nom = "Julie", Age = 17 }
+            };
 
-            //List<Person> mesPers = new List<Person> {
-            //    new Person() { Nom = "Pierre", Age = 16,Sex = Person.Gender.Men },
-            //    new Person() { Nom = "Sohpie", Age = 20,Sex = Person.Gender.Women},
-            //    new Person() { Nom = "ANais", Age = 30,Sex = Person.Gender.Women },
-            //    new Person() { Nom = "Paul", Age = 5,Sex = Person.Gender.Men },
-            //    new Person() { Nom = "Fabrice", Age = 45,Sex = Person.Gender.Men },
-            //    new Person() { Nom = "Julie", Age = 17,Sex = Person.Gender.Women }
-            //};
+            Car c1 = new Car() { Annee = 1999, Model = "Clio" };
+            Car c2 = new Car() { Annee = 1999, Model = "206" };
+            Car c3 = new Car() { Annee = 1985, Model = "R5" };
+
+
+            p1.Cars.Add(c1);
+            p1.Cars.Add(c2);
+            p2.Cars.Add(c1);
+
+
+            string result = JsonConvert.SerializeObject(mesPers);
+
+
+
         }
+    }
+
+    public class PersonFormulaireVM {
+
+        public string FirstName { get; set; }
     }
 
 }
