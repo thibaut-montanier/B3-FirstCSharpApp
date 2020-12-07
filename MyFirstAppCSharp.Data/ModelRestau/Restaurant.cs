@@ -4,6 +4,7 @@ using System.Text;
 
 namespace MyFirstAppCSharp.Data.ModelRestau {
     public class Restaurant {
+        public int ID { get; set; }
         public Address address { get; set; }
         public string borough { get; set; }
         public string cuisine { get; set; }
@@ -12,6 +13,8 @@ namespace MyFirstAppCSharp.Data.ModelRestau {
         public string restaurant_id { get; set; }
     }
     public class Address {
+
+        public int ID { get; set; }
         public string building { get; set; }
         public Coord coord { get; set; }
         public string street { get; set; }
@@ -19,6 +22,8 @@ namespace MyFirstAppCSharp.Data.ModelRestau {
     }
 
     public class Grade {
+
+        public int ID { get; set; }
         public long date { get; set; }
         public string grade { get; set; }
         public int score { get; set; }
