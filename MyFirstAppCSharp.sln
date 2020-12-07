@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAppCSharp", "MyFirstAppCSharp\MyFirstAppCSharp.csproj", "{6F38FCDE-F2E9-46BE-A124-859D1A319626}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstAppCSharp", "MyFirstAppCSharp\MyFirstAppCSharp.csproj", "{6F38FCDE-F2E9-46BE-A124-859D1A319626}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAppCSharp.Tests", "MyFirstAppCSharp.Tests\MyFirstAppCSharp.Tests.csproj", "{CBC61C69-8CD7-40CC-8A24-95E98E3A3029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstAppCSharp.Tests", "MyFirstAppCSharp.Tests\MyFirstAppCSharp.Tests.csproj", "{CBC61C69-8CD7-40CC-8A24-95E98E3A3029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAppCSharp.Data", "MyFirstAppCSharp.Data\MyFirstAppCSharp.Data.csproj", "{F3970341-E6E0-4BAC-8A11-51D771F3680A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CBC61C69-8CD7-40CC-8A24-95E98E3A3029}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBC61C69-8CD7-40CC-8A24-95E98E3A3029}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBC61C69-8CD7-40CC-8A24-95E98E3A3029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3970341-E6E0-4BAC-8A11-51D771F3680A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3970341-E6E0-4BAC-8A11-51D771F3680A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3970341-E6E0-4BAC-8A11-51D771F3680A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3970341-E6E0-4BAC-8A11-51D771F3680A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

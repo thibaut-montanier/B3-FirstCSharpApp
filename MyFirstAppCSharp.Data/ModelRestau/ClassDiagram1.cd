@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyFirstAppCSharp.Data.ModelRestau.Coord">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelRestau\Coord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyFirstAppCSharp.Data.ModelRestau.Restaurant">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIUAAAIAQAAAAAgAAA=</HashCode>
+      <FileName>ModelRestau\Restaurant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="address" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="grades" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyFirstAppCSharp.Data.ModelRestau.Address">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAAAAAAAAAAAE=</HashCode>
+      <FileName>ModelRestau\Restaurant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="coord" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyFirstAppCSharp.Data.ModelRestau.Grade">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAQAAAQAAAAA=</HashCode>
+      <FileName>ModelRestau\Restaurant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

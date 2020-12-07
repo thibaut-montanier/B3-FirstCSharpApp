@@ -17,4 +17,10 @@
     <ProjectReference Include="..\MyFirstAppCSharp\MyFirstAppCSharp.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Ressources\restaurants.net.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
