@@ -14,8 +14,8 @@ namespace MyFirstAppCSharp.Data.Tests {
 
         [TestMethod]
         public void CreateDbTest() {
-
-            using(var db = new RestaurantsContext()) {
+            IQueryable<Restaurant> mesRestaurantsFiltres;
+            using (var db = new RestaurantsContext()) {
                 db.Database.EnsureCreated();
 
 
@@ -36,10 +36,17 @@ namespace MyFirstAppCSharp.Data.Tests {
 
                 var result = db.Restaurants.Include(r=>r.address).ToList();
 
+                mesRestaurantsFiltres = db.Restaurants.Where(r => r.ID < 5); 
 
+                
                 Restau1.name = "toto";
+
             }
+
+
         }
+
+        public bool isInf5(Restaurant r) => r.ID < 5;
 
     }
 }
