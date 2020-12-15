@@ -10,10 +10,13 @@ namespace MyFirstAppCSharp.Data.Db {
         public DbSet<Grade> Grades { get; set; }
 
         public DbSet<Restaurant> Restaurants { get; set; }
+
+        private const string ConnexionString = @"server=.\SQL2017;database=myDbB32020;trusted_connection=true;";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             // c'est une mauvaise pratique que nous corrigerons ultérieurement
             optionsBuilder.UseSqlServer(
-               @"server=.\SQL2017;database=myDbB32020;trusted_connection=true;");
+                ConnexionString
+               );
         }
 
 
