@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAppCSharp.Query", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAppCSharp.Query.Tests", "MyFirstAppCSharp.Query.Tests\MyFirstAppCSharp.Query.Tests.csproj", "{DFA31DDC-6A92-4F65-89DC-9C28F7EDC679}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAppCSharp.Web", "MyFirstAppCSharp.Web\MyFirstAppCSharp.Web.csproj", "{70E224F3-4F49-46C8-9573-2B5BB2A32F25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{DFA31DDC-6A92-4F65-89DC-9C28F7EDC679}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFA31DDC-6A92-4F65-89DC-9C28F7EDC679}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFA31DDC-6A92-4F65-89DC-9C28F7EDC679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E224F3-4F49-46C8-9573-2B5BB2A32F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E224F3-4F49-46C8-9573-2B5BB2A32F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E224F3-4F49-46C8-9573-2B5BB2A32F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E224F3-4F49-46C8-9573-2B5BB2A32F25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
